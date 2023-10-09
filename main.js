@@ -1,7 +1,7 @@
 const productos = [
   { nombre: "toalla diaria", precio: 5 },
   { nombre: "tampón", precio: 10 },
-  { nombre: "toalla higuiénica", precio: 15 },
+  { nombre: "toalla higiénica", precio: 15 },
   { nombre: "copa menstrual", precio: 20 },
 ];
 
@@ -19,14 +19,14 @@ if(seleccion == "si"){
   let todosLosProductos = productos.map((producto) => producto.nombre + " " + producto.precio + "$");
   alert(todosLosProductos.join(" - "))
 } else if (seleccion == "no"){
-  alert("Ok, gracias por venir")
+  alert("Ok, gracias por tu visita")
 }
 
 while(seleccion != "no"){
   let producto = prompt("Agrega un producto a tu carrito")
   let precio = 0
 
-  if(producto == "toalla diaria" || producto == "tampón" || producto == "toalla higuiénica" || producto == "copa menstrual"){
+  if(producto == "toalla diaria" || producto == "tampón" || producto == "toalla higiénica" || producto == "copa menstrual"){
     switch(producto) {
       case "toalla diaria":
         precio = 5
@@ -34,7 +34,7 @@ while(seleccion != "no"){
       case "tampón":
         precio = 10
         break;
-      case "toalla higuiénica":
+      case "toalla higiénica":
         precio = 15
         break;
       case "copa menstrual":
